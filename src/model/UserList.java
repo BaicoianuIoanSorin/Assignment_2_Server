@@ -16,5 +16,13 @@ public class UserList
   {
     return users;
   }
+
+  public void addUser(String name)
+  {
+    User user = new User(name);
+    users.add(user);
+  }
+
+  
 }
 
