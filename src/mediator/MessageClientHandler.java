@@ -40,10 +40,21 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
         SendOutPackage sendOutPackage;
         try {
             sendOutPackage = gson.fromJson(in.readLine(),SendOutPackage.class);
-            if(sendOutPackage.isCommand())
+            if(sendOutPackage.isCommand()){
+                switch (sendOutPackage.getCommand()){
+
+                }
+            }
+            else {
+
+            }
         }
         catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    public void close() throws IOException {
+        socket.close();
     }
 }
