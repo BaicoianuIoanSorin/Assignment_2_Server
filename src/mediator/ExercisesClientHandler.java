@@ -1,7 +1,6 @@
 package mediator;
 
 import com.google.gson.Gson;
-import model.Exercise;
 import model.Model;
 
 import java.beans.PropertyChangeEvent;

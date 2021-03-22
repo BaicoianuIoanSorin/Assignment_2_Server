@@ -1,6 +1,5 @@
 package viewmodel;
 
-import model.Exercise;
 import model.Model;
 
 public class ManageExerciseViewModel

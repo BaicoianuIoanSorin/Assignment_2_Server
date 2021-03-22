@@ -1,7 +1,5 @@
 package mediator;
 
-import model.Exercise;
-
 import java.util.ArrayList;
 
 public class ExerciseListPackage
