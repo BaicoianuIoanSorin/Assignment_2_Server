@@ -29,8 +29,8 @@ public class SendOutPackage {
         return messageSenderName;
     }
 
-    public boolean isCommand(SendOutPackage sendOutPackage){
-        if(sendOutPackage.getCommand()==null){
+    public boolean isCommand(){
+        if(this.getCommand()==null){
             return false;
         }
         else return true;

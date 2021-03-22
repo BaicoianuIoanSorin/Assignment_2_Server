@@ -24,6 +24,6 @@ public class MyApplication extends Application
     view.start(primaryStage);
   }
   @Override public void stop() throws IOException {
-    exercisesServer.close();
+
   }
 }
