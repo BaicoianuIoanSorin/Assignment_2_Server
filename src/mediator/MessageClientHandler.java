@@ -32,25 +32,30 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-
+        out.println(gson.toJson(new SendOutPackage(evt.getPropertyName(),(String)evt.getNewValue())));
     }
 
     @Override
     public void run() {
         SendOutPackage sendOutPackage;
-        try {
-            sendOutPackage = gson.fromJson(in.readLine(),SendOutPackage.class);
-            if(sendOutPackage.isCommand()){
-                switch (sendOutPackage.getCommand()){
-
+        while (true) {
+            try {
+                sendOutPackage = gson.fromJson(in.readLine(), SendOutPackage.class);
+                if (sendOutPackage.isCommand()) {
+                    switch (sendOutPackage.getCommand()) {
+                        case "getUserCount": {
+                            out.println(gson.toJson(new SendOutPackage("getUserCount", String.valueOf(model.getConnectedUsersInt()))));
+                        }
+                        case "getUsersNames": {
+                            out.println(gson.toJson(new SendOutPackage("getUsersNames", model.getConnectedUsers().toString())));
+                        }
+                    }
+                } else {
+                    model.addLog(sendOutPackage.getMessage());
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-            else {
-
-            }
-        }
-        catch (IOException e){
-            e.printStackTrace();
         }
     }
 
