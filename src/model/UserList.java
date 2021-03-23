@@ -23,6 +23,12 @@ public class UserList
     users.add(user);
   }
 
+  public void addUser()
+  {
+    User user = new User();
+    users.add(user);
+  }
+
   
 }
 
