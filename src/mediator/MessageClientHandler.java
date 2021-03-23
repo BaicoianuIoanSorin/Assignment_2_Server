@@ -42,7 +42,9 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
             sendOutPackage = gson.fromJson(in.readLine(),SendOutPackage.class);
             if(sendOutPackage.isCommand()){
                 switch (sendOutPackage.getCommand()){
-
+                    case "getUserCount":{
+                        
+                    }
                 }
             }
             else {
