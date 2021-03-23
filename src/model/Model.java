@@ -6,10 +6,14 @@ import java.util.ArrayList;
 
 public interface Model extends NamedPropertyChangeSubject
 {
+  void login(String name);
   UserList getAllUsers();
   void addLog(String log);
   ArrayList<String> getLog();
   int getConnectedUsersInt();
   ArrayList<String> getConnectedUsers();
-  
+  ArrayList<String> getMessages(String activeUserName);
+  String getName();
+  int getSizeOfUsers();
+  void sendMessage(String userName, String message);
 }

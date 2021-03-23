@@ -1,18 +1,23 @@
 package view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
+import viewmodel.ChatViewModel;
 
 public class ChatViewController {
     @FXML
     private ListView messages;
     @FXML
     private TextField newMessage;
+    @FXML
+    private Label userNameInfo;
+    @FXML
+    private Label activeUsers;
     private ViewHandler viewHandler;
     private Region root;
-    private ViewHandler viewHandler;
     private ChatViewModel viewModel;
 
     public ChatViewController()
@@ -25,14 +30,20 @@ public class ChatViewController {
         this.viewModel = viewModel;
         this.viewHandler = viewHandler;
         this.root = root;
-
-        messages.itemsProperty().set(viewModel.getMessagesProperty());
+        userNameInfo.textProperty().set(viewModel.getUserNameInfoProperty().get());
+        activeUsers.textProperty().set(String.valueOf(viewModel.getActiveUsersProperty().get()));
+        messages.itemsProperty().set(viewModel.getListOfMessages());
         newMessage.textProperty().bindBidirectional(viewModel.getNewMessageProperty());
     }
 
     public Region getRoot()
     {
         return root;
+    }
+
+    public void reset()
+    {
+        viewModel.reset();
     }
 
     @FXML private void onSend()

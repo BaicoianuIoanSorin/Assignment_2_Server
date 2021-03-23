@@ -19,16 +19,30 @@ public class UserList
 
   public void addUser(String name)
   {
-    User user = new User(name);
-    users.add(user);
+    boolean ok = true;
+    for(int i = 0; i < users.size(); i++)
+    {
+      if(users.get(i).getName().equals(name))
+      {
+        ok = false;
+      }
+    }
+    if(ok)
+    {
+      User user = new User(name);
+      users.add(user);
+    }
   }
 
-  public void addUser()
+  public int size()
   {
-    User user = new User();
-    users.add(user);
+    return users.size();
   }
 
-  
+  public User getUser(int number)
+  {
+    return users.get(number);
+  }
+
 }
 
