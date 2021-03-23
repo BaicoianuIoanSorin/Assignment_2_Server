@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a5b0fd-9d60-4d89-8a91-b47af10cf0b9" name="Default Changelist" comment="" />
+    <list default="true" id="79a5b0fd-9d60-4d89-8a91-b47af10cf0b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/view/ChatView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ChatViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/LogView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/LogViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ViewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Assignment_2_Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment_2_Server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -36,6 +45,19 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,14 +69,23 @@
     </task>
     <servers />
   </component>
+<<<<<<< Updated upstream
   <component name="WindowStateProjectService">
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616411490758">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1616448372307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616411490758" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616448372307" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616411673590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616411673590" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1616411627228">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616411627228" />
+=======
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+>>>>>>> Stashed changes
   </component>
 </project>

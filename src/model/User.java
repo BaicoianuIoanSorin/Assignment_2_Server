@@ -12,6 +12,11 @@ public class User
     this.name = "User" + random.nextInt(100);
   }
 
+  public User(String name)
+  {
+    this.name = name;
+  }
+
   public void setName(String name)
   {
     this.name = name;
