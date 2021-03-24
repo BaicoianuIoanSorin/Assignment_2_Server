@@ -1,26 +1,19 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
-import model.Model;
-import model.ModelManager;
-import viewmodel.ViewModelFactory;
+import mediator.*;
+import model.*;
 
 import java.io.IOException;
 
 public class MyApplication extends Application
 {
-  private ExercisesServer exercisesServer;
+  private MessageServer messageServer;
 
   public void start(Stage primaryStage) throws IOException {
-
     Model model = new ModelManager();
-    ViewModelFactory viewModelFactory = new ViewModelFactory(model);
-    ViewHandler view = new ViewHandler(viewModelFactory);
-    exercisesServer = new ExercisesServer(model);
-    Thread thread = new Thread(exercisesServer);
+    messageServer = new MessageServer(model);
+    Thread thread = new Thread(messageServer);
     thread.start();
-
-
-    view.start(primaryStage);
   }
   @Override public void stop() throws IOException {
 

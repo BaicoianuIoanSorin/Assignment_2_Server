@@ -24,6 +24,7 @@ public class ModelManager implements Model
     this.userList = new UserList();
     this.propertyChangeSupport = new PropertyChangeSupport(this);
     this.OnlineUsers = new ArrayList<>();
+
     this.file = new File("ChatLogs.txt");
     try {
       if (file.createNewFile()) {
@@ -35,6 +36,7 @@ public class ModelManager implements Model
       System.out.println("An error occurred.");
       e.printStackTrace();
     }
+
   }
 
   @Override public UserList getAllUsers()

@@ -16,6 +16,7 @@ public class MessageServer implements Runnable{
     private Socket socket;
 
     public MessageServer(Model model)throws IOException {
+        System.out.println("SERVER STARTED...");
         this.model = model;
         this.welcomeSocket = new ServerSocket(PORT);
     }

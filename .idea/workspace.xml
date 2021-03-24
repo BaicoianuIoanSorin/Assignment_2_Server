@@ -1,51 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a5b0fd-9d60-4d89-8a91-b47af10cf0b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/view/ChatView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ChatViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/LogView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/LogViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ViewHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Assignment_2_Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment_2_Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c3b0220f-f02e-40d0-bd39-5abeea72d8dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExerciseMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MessageMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mediator/MessageServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mediator/MessageServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ModelManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1q6sfPrOhSOllgno8uXsPFX4jTz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MessageMain">
+    <configuration name="MessageMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MessageMain" />
+      <module name="Assignment_2_Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyApplication" />
+      <module name="Assignment_2_Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -57,35 +51,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MessageMain" />
+        <item itemvalue="Application.MyApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="79a5b0fd-9d60-4d89-8a91-b47af10cf0b9" name="Default Changelist" comment="" />
-      <created>1616411476535</created>
+      <changelist id="c3b0220f-f02e-40d0-bd39-5abeea72d8dc" name="Default Changelist" comment="" />
+      <created>1616582595589</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1616411476535</updated>
+      <updated>1616582595589</updated>
+      <workItem from="1616582596722" duration="1658000" />
     </task>
     <servers />
   </component>
-<<<<<<< Updated upstream
-  <component name="WindowStateProjectService">
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1616448372307">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616448372307" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616411673590">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616411673590" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1616411627228">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616411627228" />
-=======
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
->>>>>>> Stashed changes
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MessageMain.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
