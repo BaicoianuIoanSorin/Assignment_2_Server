@@ -32,4 +32,9 @@ public class LogViewModel {
         userNameProperty.set("");
         errorLabelProperty.set("");
     }
+
+    public void enterName()
+    {
+        model.login(userNameProperty.get());
+    }
 }

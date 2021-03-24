@@ -22,7 +22,11 @@ public class LogViewController {
 
     public void init(ViewHandler viewHandler, LogViewModel viewModel, Region root)
     {
-        /** ->>>To be added tomorrow - 24.03.2021 **/
+        this.viewHandler = viewHandler;
+        this.viewModel = viewModel;
+        this.root = root;
+        userName.textProperty().bindBidirectional(viewModel.getUserNameProperty());
+        errorLabel.textProperty().bind(viewModel.getErrorLabelProperty());
     }
 
     public Region getRoot()
@@ -33,5 +37,12 @@ public class LogViewController {
     public void reset()
     {
         viewModel.reset();
+    }
+
+    @FXML
+    private void onEnterName()
+    {
+        viewModel.enterName();
+        viewHandler.openView("Chat");
     }
 }

@@ -9,7 +9,7 @@ import viewmodel.ChatViewModel;
 
 public class ChatViewController {
     @FXML
-    private ListView messages;
+    private ListView<String> messages;
     @FXML
     private TextField newMessage;
     @FXML
