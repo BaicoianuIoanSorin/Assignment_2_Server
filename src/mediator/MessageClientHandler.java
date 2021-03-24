@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.ArrayList;
 
 public class MessageClientHandler implements Runnable, PropertyChangeListener {
 
@@ -32,7 +33,7 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        out.println(gson.toJson(new SendOutPackage(evt.getPropertyName(),(String)evt.getNewValue())));
+        out.println(gson.toJson(new SendOutPackage((ArrayList<String>) evt.getNewValue())));
     }
 
     @Override
