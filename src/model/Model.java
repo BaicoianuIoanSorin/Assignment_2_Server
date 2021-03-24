@@ -16,4 +16,6 @@ public interface Model extends NamedPropertyChangeSubject
   String getName();
   int getSizeOfUsers();
   void sendMessage(String userName, String message);
+  void addUser(String userName);
+  void removeUser(String userName);
 }
