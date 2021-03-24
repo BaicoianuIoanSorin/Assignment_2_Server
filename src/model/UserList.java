@@ -34,6 +34,17 @@ public class UserList
     }
   }
 
+  public void removeUser(String name)
+  {
+    for(int i = 0; i < users.size(); i++)
+    {
+      if(users.get(i).getName().equals(name))
+      {
+        users.remove(i);
+      }
+    }
+  }
+
   public int size()
   {
     return users.size();

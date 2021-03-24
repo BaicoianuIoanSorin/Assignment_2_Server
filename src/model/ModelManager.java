@@ -48,9 +48,15 @@ public class ModelManager implements Model
     return null;
   }
 
-  @Override public UserList getUserList()
+
+  @Override public void addUser(String name)
   {
-    return userList;
+    getAllUsers().addUser(name);
+  }
+
+  @Override public void removeUser(String name)
+  {
+    getAllUsers().removeUser(name);
   }
 
   @Override public void addListener(String propertyName,
