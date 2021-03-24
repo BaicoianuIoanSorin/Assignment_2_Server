@@ -48,6 +48,11 @@ public class ModelManager implements Model
     return null;
   }
 
+  @Override public UserList getUserList()
+  {
+    return userList;
+  }
+
   @Override public void addListener(String propertyName,
       PropertyChangeListener listener)
   {
