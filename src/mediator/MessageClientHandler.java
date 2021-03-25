@@ -52,6 +52,7 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
                         }
                         case "addUser":{
                             model.addUser(sendOutPackage.getCommandName());
+                            System.out.println(sendOutPackage.getCommandName());
                         }
                         case "removeUser":{
                             model.removeUser(sendOutPackage.getCommandName());
