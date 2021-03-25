@@ -25,6 +25,7 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
 
     public MessageClientHandler(Socket socket,Model model) throws IOException{
         this.model = model;
+        this.model.addListener(null,this);
         gson = new Gson();
         this.socket = socket;
         in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -33,6 +34,7 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
+        System.out.println("Received");
         out.println(gson.toJson(new SendOutPackage((ArrayList<String>) evt.getNewValue())));
     }
 

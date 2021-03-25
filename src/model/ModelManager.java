@@ -47,10 +47,11 @@ public class ModelManager implements Model
   @Override public void addLog(String log1) throws IOException
   {
     log.add(log1);
+    System.out.println("Added");
     propertyChangeSupport.firePropertyChange("Log",null,log);
-    System.out.println(log1.toString());
+    System.out.println("logs");
 
-      FileWriter out = new FileWriter("filename.txt");
+      FileWriter out = new FileWriter(file);
       out.write(log1.toString());
       System.out.println("Successfully saved log to file");
   }
@@ -84,14 +85,21 @@ public class ModelManager implements Model
   @Override public void addListener(String propertyName,
       PropertyChangeListener listener)
   {
-    propertyChangeSupport.addPropertyChangeListener(propertyName,listener);
+    if(propertyName == null)
+    {
+      propertyChangeSupport.addPropertyChangeListener(listener);
+    }
+    else propertyChangeSupport.addPropertyChangeListener(propertyName,listener);
   }
 
   @Override public void removeListener(String propertyName,
       PropertyChangeListener listener)
   {
-    propertyChangeSupport.removePropertyChangeListener(propertyName, listener);
-
+    if(propertyName == null)
+    {
+      propertyChangeSupport.removePropertyChangeListener(listener);
+    }
+    else propertyChangeSupport.removePropertyChangeListener(propertyName, listener);
   }
 }
 
