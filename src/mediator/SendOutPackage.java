@@ -6,6 +6,7 @@ public class SendOutPackage {
     private String messageSenderName;
     private String message;
     private String command;
+    private boolean isCommand;
     private ArrayList<String> log;
 
     public SendOutPackage(String messageName,String message){
@@ -14,8 +15,9 @@ public class SendOutPackage {
         this.command = null;
     }
 
-    public SendOutPackage(String command){
+    public SendOutPackage(String commandName,String command, boolean isCommand){
         this.command = command;
+        this.isCommand = isCommand;
         this.messageSenderName = null;
         this.message = null;
     }
