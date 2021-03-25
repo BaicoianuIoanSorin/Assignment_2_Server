@@ -28,15 +28,22 @@ public class MessageServer implements Runnable{
 
     @Override
     public void run() {
-        try {
-            socket = welcomeSocket.accept();
-            messageClientHandler = new MessageClientHandler(socket,model);
-            running = true;
+        while(true)
+        {
+            try
+            {
+                socket = welcomeSocket.accept();
+                System.out.println(socket.getInetAddress());
+                messageClientHandler = new MessageClientHandler(socket, model);
+                running = true;
 
-        } catch (IOException e) {
-            e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+            Thread serverThread = new Thread(messageClientHandler);
+            serverThread.start();
         }
-        Thread serverThread = new Thread(messageClientHandler);
-        serverThread.start();
     }
 }

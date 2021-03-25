@@ -16,6 +16,6 @@ public class MyApplication extends Application
     thread.start();
   }
   @Override public void stop() throws IOException {
-
+    messageServer.close();
   }
 }
