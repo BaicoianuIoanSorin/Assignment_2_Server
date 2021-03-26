@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b0220f-f02e-40d0-bd39-5abeea72d8dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mediator/MessageClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mediator/MessageClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExerciseMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MessageMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mediator/MessageServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mediator/MessageServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/ModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ModelManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +29,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -45,19 +44,6 @@
     <configuration name="MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyApplication" />
       <module name="Assignment_2_Server" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -78,13 +64,33 @@
       <option name="presentableId" value="Default" />
       <updated>1616582595589</updated>
       <workItem from="1616582596722" duration="1658000" />
-      <workItem from="1616754272086" duration="271000" />
-      <workItem from="1616754725226" duration="2080000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="914" height="295" key="GridCell.Tab.0.bottom" timestamp="1616673566898">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1616673566898" />
+    <state width="914" height="295" key="GridCell.Tab.0.center" timestamp="1616673566897">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1616673566897" />
+    <state width="914" height="295" key="GridCell.Tab.0.left" timestamp="1616673566897">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1616673566897" />
+    <state width="914" height="295" key="GridCell.Tab.0.right" timestamp="1616673566897">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1616673566897" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1616669647861">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="SettingsEditor/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1616669647861" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

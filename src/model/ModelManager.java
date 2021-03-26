@@ -101,12 +101,6 @@ public class ModelManager implements Model
     }
     else propertyChangeSupport.removePropertyChangeListener(propertyName, listener);
   }
-
-  @Override
-  public void addMessage(String message) {
-    propertyChangeSupport.firePropertyChange("Message",null,message);
-
-  }
 }
 
 
