@@ -34,8 +34,7 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-
-        System.out.println(evt.getNewValue());
+        System.out.println("Received");
         out.println(gson.toJson(new SendOutPackage((ArrayList<String>) evt.getNewValue())));
     }
 
