@@ -62,6 +62,7 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
                     }
                 } else {
                     model.addLog(sendOutPackage.getMessage());
+                    model.addMessage(sendOutPackage.getMessage());
                 }
             } catch (IOException e) {
                 e.printStackTrace();
