@@ -29,12 +29,12 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
         gson = new Gson();
         this.socket = socket;
         in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        out = new PrintWriter(socket.getOutputStream());
+        out = new PrintWriter(socket.getOutputStream(),true);
     }
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println("Received");
+        System.out.println("evt.get new value: " + evt.getNewValue());
         out.println(gson.toJson(new SendOutPackage((ArrayList<String>) evt.getNewValue())));
     }
 
@@ -61,7 +61,7 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
                         }
                     }
                 } else {
-                    model.addLog(sendOutPackage.getMessage());
+                    model.addLog(sendOutPackage.getMessageName()+"->"+sendOutPackage.getMessage());
                 }
             } catch (IOException e) {
                 e.printStackTrace();
