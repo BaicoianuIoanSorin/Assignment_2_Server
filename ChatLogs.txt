@@ -1,0 +1,5 @@
+as->a
+as->a
+as->s
+as->d
+as->s

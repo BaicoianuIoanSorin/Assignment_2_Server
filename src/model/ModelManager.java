@@ -5,9 +5,7 @@ import utility.observer.subject.NamedPropertyChangeSubject;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class ModelManager implements Model
@@ -17,15 +15,16 @@ public class ModelManager implements Model
   private UserList userList;
   private ArrayList<MessageClientHandler> OnlineUsers;
   private File file;
+  private PrintWriter out;
 
-  public ModelManager()
+  public ModelManager() throws FileNotFoundException
   {
     this.log = new ArrayList<>();
     this.userList = new UserList();
     this.propertyChangeSupport = new PropertyChangeSupport(this);
     this.OnlineUsers = new ArrayList<>();
-
     this.file = new File("ChatLogs.txt");
+    out = new PrintWriter(new FileOutputStream(file), true);
     try {
       if (file.createNewFile()) {
         System.out.println("File created: " + file.getName());
@@ -50,9 +49,8 @@ public class ModelManager implements Model
     System.out.println("Added");
     propertyChangeSupport.firePropertyChange("Log",null,log);
     System.out.println("logs");
-
-      FileWriter out = new FileWriter(file);
-      out.write(log1.toString());
+      out.println(log1);
+      out.flush();
       System.out.println("Successfully saved log to file");
   }
 
@@ -66,15 +64,15 @@ public class ModelManager implements Model
     return userList.size();
   }
 
-  @Override public ArrayList<String> getConnectedUsers()
+  @Override public UserList getConnectedUsers()
   {
-    return null;
+    return userList;
   }
 
 
   @Override public void addUser(String name)
   {
-    getAllUsers().addUser(name);
+    userList.addUser(name);
   }
 
   @Override public void removeUser(String name)

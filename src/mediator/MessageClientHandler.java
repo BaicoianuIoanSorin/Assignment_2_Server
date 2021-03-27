@@ -44,10 +44,12 @@ public class MessageClientHandler implements Runnable, PropertyChangeListener {
         while (true) {
             try {
                 sendOutPackage = gson.fromJson(in.readLine(), SendOutPackage.class);
+                System.out.println(sendOutPackage.getMessage() + " " + sendOutPackage.getCommand() + "Server received json.");
                 if (sendOutPackage.isCommand()) {
                     switch (sendOutPackage.getCommand()) {
                         case "getUserCount": {
                             out.println(gson.toJson(new SendOutPackage("getUserCount", String.valueOf(model.getConnectedUsersInt()),true)));
+
                         }
                         case "getUsersNames": {
                             out.println(gson.toJson(new SendOutPackage("getUsersNames", model.getConnectedUsers().toString(),true)));
